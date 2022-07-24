@@ -1,0 +1,7 @@
+name: VaultCraft
+version: '${version}'
+main: jp.iceserver.vaultcraft.VaultCraft
+api-version: 1.18
+authors: [ Minidon ]
+description: Vaultをベースに経済要素を追加するプラグイン
+website: https://github.com/IceServerLab/VaultCraft
