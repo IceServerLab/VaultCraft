@@ -13,5 +13,5 @@ prefix: ""
 
 # currencyName:
 #   経済で用いられる通貨の名前
-#   DEFAULT: "円"
-currencyName: "円"
+#   DEFAULT: "円|円" <- "単数形|複数形"
+currencyName: "円|円"
