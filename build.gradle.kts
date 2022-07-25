@@ -17,6 +17,11 @@ repositories {
 dependencies {
     implementation(kotlin("stdlib"))
 
+    val exposedVersion = "0.38.2"
+    implementation("org.jetbrains.exposed", "exposed-core", exposedVersion)
+    implementation("org.jetbrains.exposed", "exposed-dao", exposedVersion)
+    implementation("org.jetbrains.exposed", "exposed-jdbc", exposedVersion)
+
     implementation("com.github.hazae41", "mc-kutils", "master-SNAPSHOT")
     implementation("com.github.MilkBowl", "VaultAPI", "1.7.1")
 
