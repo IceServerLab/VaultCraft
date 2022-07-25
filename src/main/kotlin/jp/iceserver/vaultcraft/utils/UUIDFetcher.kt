@@ -13,15 +13,7 @@ import java.util.function.Consumer
 
 
 class UUIDFetcher {
-    private val executor: ExecutorService
-
-    constructor(threads: Int) {
-        executor = Executors.newFixedThreadPool(threads)
-    }
-
-    constructor(executor: ExecutorService) {
-        this.executor = executor
-    }
+    private val executor: ExecutorService = Executors.newFixedThreadPool(1)
 
     @Throws(Exception::class)
     fun fetchUUID(playerName: String): UUID {
