@@ -18,6 +18,7 @@ dependencies {
     implementation(kotlin("stdlib"))
 
     implementation("com.github.hazae41", "mc-kutils", "master-SNAPSHOT")
+    implementation("com.github.MilkBowl", "VaultAPI", "1.7.1")
 
     compileOnly("io.papermc.paper:paper-api:1.18.2-R0.1-SNAPSHOT")
 }
