@@ -1,0 +1,17 @@
+#########################################################
+# VaultCraft Configuration File
+# Plugin version 1.0.0 (M1n1don)
+# - Website: https://www.iceserver.jp/
+# - Discord: https://discord.gg/B4SYTyW
+# - GitHub: https://github.com/IceServerLab/VaultCraft
+##
+
+# prefix:
+#   サーバー上のユーザーに対する本プラグインのメッセージに使用されるプレフィックス
+#   DEFAULT: ""
+prefix: ""
+
+# currencyName:
+#   経済で用いられる通貨の名前
+#   DEFAULT: "円"
+currencyName: "円"

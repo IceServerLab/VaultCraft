@@ -1,6 +1,8 @@
 package jp.iceserver.vaultcraft
 
+import hazae41.minecraft.kutils.bukkit.init
 import hazae41.minecraft.kutils.bukkit.listen
+import jp.iceserver.vaultcraft.config.MainConfig
 import jp.iceserver.vaultcraft.economy.VaultEconomy
 import net.milkbowl.vault.economy.Economy
 import org.bukkit.event.server.PluginEnableEvent
@@ -17,6 +19,9 @@ class VaultCraft : AbstractVaultCraft()
     override fun onEnable()
     {
         plugin = this
+
+        init(MainConfig)
+        MainConfig.autoSave = true
 
         if (!(server.pluginManager.getPlugin("Vault") ?: return).isEnabled)
         {
