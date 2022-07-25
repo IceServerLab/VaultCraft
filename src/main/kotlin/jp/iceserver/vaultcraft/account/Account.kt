@@ -1,4 +1,4 @@
-package jp.iceserver.vaultcraft.datas
+package jp.iceserver.vaultcraft.account
 
 import org.bukkit.OfflinePlayer
 
