@@ -6,6 +6,7 @@ import jp.iceserver.vaultcraft.datas.Account
 import jp.iceserver.vaultcraft.commands.*
 import jp.iceserver.vaultcraft.config.MainConfig
 import jp.iceserver.vaultcraft.economy.VaultEconomy
+import jp.iceserver.vaultcraft.listeners.*
 import jp.iceserver.vaultcraft.tables.*
 import net.milkbowl.vault.economy.Economy
 import org.bukkit.Bukkit
@@ -65,6 +66,10 @@ class VaultCraft : AbstractVaultCraft()
             }
         }
         else hookVault()
+
+        registerListeners(
+            PlayerJoin()
+        )
 
         registerCommands(
             "balance" to BalanceCommand()
